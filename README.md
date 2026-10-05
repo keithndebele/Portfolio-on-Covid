@@ -137,6 +137,30 @@ covid19-analytics-portfolio/
 
 Worldwide COVID-19 case, death, testing, hospitalization, and vaccination data, sourced from : https://ourworldindata.org/covid-deaths. Five normalized tables: `CovidDeaths`, `Vaccination`, `Location`, `Testing`, `Hospitalizations`, joined on `code` and `date`.
 
+## Key Findings
+
+The analysis produced several notable findings across COVID-19 burden, policy response, vaccination, healthcare pressure, testing, and socioeconomic factors:
+
+1. **Burden — 103.4M reported cases:** The United States recorded the highest cumulative number of reported COVID-19 cases in the dataset, followed by China (**99.4M**) and India (**45.1M**).
+
+2. **Policy — 0–28 day lag analysis:** The analysis tested relationships between government stringency and subsequent case growth using 0-, 7-, 14-, 21-, and 28-day lags. The results highlight the importance of considering delayed effects when evaluating policy and case trends rather than comparing policy changes with cases on the same day.
+
+3. **Vaccination — 134 of 239 countries reached 50% full vaccination:** Among countries reaching the milestone, the median time from the first reported vaccination to 50% full vaccination was **232 days**. Mean case-fatality rate declined from **1.77% to 1.34%** after countries reached 30% full vaccination, and from **1.39% to 0.99%** after reaching 50%.
+
+4. **Hospitals — 12-day median hospitalization-to-death lag:** Across countries with sufficient hospitalization data, the strongest relationship between hospital admissions and subsequent deaths occurred at a median lag of **12 days**. Hospital admissions per 100 weekly cases also varied across pandemic eras, with median values of **8.62** during the Original/Alpha period, **4.35** during Delta, and **5.20** during Omicron+.
+
+5. **Testing — 54 of 135 countries averaged over 10% positivity:** High average positivity rates were observed in several countries, including Brazil (**46.87%**), Mexico (**30.47%**), and Ecuador (**28.40%**). High positivity can indicate that testing capacity was insufficient to capture the full extent of transmission.
+
+6. **Socioeconomic drivers — r = 0.487:** GDP per capita showed a **moderate positive correlation** with vaccination coverage. Higher-income countries generally achieved higher vaccination coverage, although the relationship should be interpreted as an association rather than evidence that GDP directly caused higher vaccination rates.
+
+### Additional Analytical Findings
+
+* **Population density vs. reported cases:** The correlation was weak (**r = 0.159**), suggesting that population density alone did not explain differences in reported cases per 100,000 people.
+* **Diabetes prevalence vs. reported CFR:** The relationship was very weak (**r = -0.083**), indicating that diabetes prevalence alone was not a strong linear predictor of country-level reported case-fatality rates in this analysis.
+* **Hospitalization burden:** Comparing hospital admissions with estimated weekly cases provided a way to evaluate healthcare pressure relative to reported transmission rather than relying only on absolute hospitalization counts.
+* **Vaccination and outcomes:** The before/after comparisons around 30% and 50% full-vaccination milestones showed lower mean CFR following the milestones, providing an important association for further investigation.
+
+
 ---
 
 ## Future Work
