@@ -1,4 +1,4 @@
-# COVID-19 Exploratory Data Analysis
+# COVID-19 Data Analysis Using Python
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue) ![pandas](https://img.shields.io/badge/pandas-3.x-150458) ![Jupyter](https://img.shields.io/badge/Jupyter-notebook-orange)
 
